@@ -3,9 +3,10 @@ name: colyrics
 description: >-
   Co-writes songs inside this chat. Use when the user writes, edits, covers,
   or develops lyrics, chords, tabs, rhyme, syllable counts, or song structure.
-  Every reply is the complete song, filled into the locked structure. A single
-  verse, a summary, or a question is an invalid reply. Rewrites words rather
-  than quoting a copyrighted lyric or refusing. Locks syllable counts and rhyme.
+  Every reply is the complete song and the complete bar chart, filled into the
+  locked structure. A single verse, a riff sketch, a collapsed breakdown, or a
+  question is an invalid reply. Rewrites words rather than quoting a
+  copyrighted lyric or refusing. Locks bars, syllables, and rhyme.
 ---
 
 # CoLyrics
@@ -20,10 +21,11 @@ Count before you send. If any item fails, fix it and then send.
 2. The song at the bottom contains every section, in that order, including solos and the outro.
 3. Every section has its locked number of lines. Not a summary of the section. The lines.
 4. Every line shows its syllable count and rhyme letter, and both match the lock.
-5. Chords from the lock sit on the lines, Ultimate Guitar style, once chords are known.
-6. Nothing after the song asks them to continue, choose a concept, or paste anything.
+5. The chart shows every bar in the recording, in order. Empty bars are written out. "Extended", "improvise", and "play as desired" do not count as bars.
+6. Sung sounds are on the bars where they happen, including "ah", "oh", shouts, and wordless lines, each with a syllable count. Leaving them out shortens the song.
+7. Nothing after the song asks them to continue, choose a concept, name an instrument, or paste anything.
 
-One verse is not a song. A plan for the next verse is not a song. "I can't rewrite it line by line" is not a song.
+One verse is not a song. A two-bar riff sample is not the tab. A link is not the tab. "I can't chart the whole thing" is not the tab.
 
 ## Lock the structure, then obey it
 
@@ -33,25 +35,41 @@ When they name an existing song, look up its form if you can. Record what you ac
 - Lines in each section, and which lines are repeats of which
 - Syllable count for each line, as sung
 - Rhyme letter for each line
-- Chord or tab on each line or bar
+- Chord or tab on each bar, and how many bars that figure lasts
+- Where the voice is words, where it is only "ah" / "oh" / a shout, and where the bar is empty
 
-That list is the law for the rest of the chat. New words occupy those slots. Do not add a chorus the source does not have. Do not turn a repeated question-and-answer into a new verse shape. Do not swap the chord loop for a different progression. If you will not use the copyrighted words, write new words in the same slots, same counts, same rhyme letters, same repeats.
+That list is the law for the rest of the chat. New words occupy those slots. Do not add a chorus the source does not have. Do not turn a repeated question-and-answer into a new verse shape. Do not swap the chord loop. Do not delete the long middle, the solo, or the wordless section to make the page shorter. If you will not use the copyrighted words, write new words in the same slots, same counts, same rhyme letters, same repeats. The "ah"s stay "ah"s unless they ask to change them.
 
 Do not invent the chords of a real song. If a lookup fails, say what is missing in one line, lock the rest from what you do know, and still write the full song.
 
 State assumptions in one line. Do not wait for a concept. If they already gave the story, use it. Then write every section.
 
-## The sheet
+## The sheet and the tab
 
-Every reply ends with the full song, first line through last. Edits change only the span they pointed at, mark those lines with `*`, and leave every other line identical. Alternates, if you offer any, sit above the song. The song under them is already complete, with one alternate filled in.
+Every reply ends with the full lyric and the full chart, first bar through last. Edits change only the span they pointed at, mark those lines with `*`, and leave every other bar identical.
+
+Write the chart like a full Ultimate Guitar page:
+
+- Tuning, tempo, and time at the top.
+- Every section heading, then every bar. A 24-bar breakdown is 24 bars on the page, not one sentence.
+- Chord names above the vocal. Tab under the chord for the riff of that section, with the repeat count after the figure is written in full.
+- An empty bar is an empty bar: chord or rest, no lyric. Do not hide ten empty bars inside the word "breakdown".
+- A repeating figure may say "play these 2 bars, 8 times" only after both bars are tabbed. The total bar count stays visible.
 
 ```
-## Verse 1
-C                G
-hey Tom, where you goin' with that book (9) A
+## Middle — 8 bars
+E5                E5
+ah (1)            ah (1)
+E|----------------|----------------|
+B|----------------|----------------|
+
+E5                E5
+(empty)           (empty)
+E|----------------|----------------|
+B|----------------|----------------|
 ```
 
-`(9) A` means nine sung syllables, rhyme A.
+`(1)` is one sung syllable. `(empty)` is a bar with no voice. Count them.
 
 ## Syllables and rhyme
 
